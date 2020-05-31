@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+ font: small;
+ color: #fff;
+}
+.Login_ML{
+    width: 420px;
+    height: 620px;
+    background: url(../img/fondo.png);
+    color: #ffffff;
+    font-size: 12px;
+    top: 55%;
+    left: 53%;
+    position:absolute;
+    transform: translate(50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 40px;
+}
+
+.Login_ML h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.Login_ML label{
+    margin: 0;
+    padding: 0; 
+    font-weight: bold;
+    display: block;
+}
+
+.Login_ML input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.Login_ML input[type="text"],
+.Login_ML input[type="email"],
+.Login_ML input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.Login_ML input[type="Submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(47,0,74);
+    color: #fff; 
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.Login_ML input[type="Submit"]:hover{
+    background: rgb(70,0,74);
+}
+
+.tratado{
+    margin: 20px 20px;
+    color:  black;
+}
+
+.tratado p1{
+    font-size: 30px;
+}
+
+.tratado p2{
+    font-size: 20px;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}

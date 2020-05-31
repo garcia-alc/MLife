@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Life | ML@</title>
+    <link rel="stylesheet" href="css/Web_LifeEstilos.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li class="ML"> <img src="../img/logo.png" alt="MLife" class="ajustar"> <input type="submit"
+                        value="MLife Compañy" class="Logo_BT">
+                </li>
+                <li class="radio_btn Mover">
+                    <button type="button" class="Bu">
+                        <img src="img/usuario.png" alt="ucer" class="Ucer" id="Ucer">
+                    </button></li>
+                <li class="radio_btn Mover"><a href="#">
+                        HOME </a></li>
+
+                <li class="radio_btn Mover"><a href="#">
+                        MLTOP</a></li>
+
+                <li class="radio_btn Mover"><a href="#">
+                        BOLSA</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="publicar">
+
+        <form action="/publicar" method="POST" enctype="multipart/form-data">
+            <input type="text" placeholder="¿Cual es tu meta?" class="coon" name="textoP">
+            <input type="file" name="image" id="fotoPublicacion" class="a">
+            <input class="ss" type="submit" value="Publicar">
+
+        </form>
+
+
+        <button type="submit" class="pub">
+            <img src="img/pub.png">
+        </button>
+    </div>
+
+
+
+    <div class="progress" id="barra">
+        <label for="barr" class="tittle">Mi progreso</label>
+        <div class="prosbar">
+            <label for="p">Proyectos en curso</label>
+            <label for="a">TOP popularidad</label>
+            <label for="a">Acciones valuadas</label>
+        </div>
+    </div>
+
+    <div> 
+        <img src="img/usuario.png" alt="mm" class="mm" id="mm">
+    </div>
+
+
+    <div class="contenedor">
+        <% for(var i=0; i< datos.length; i++){%>
+        <div class="public">
+            <img src= <%= datos[i].imgperfil%> alt="mini" class="mini">
+            <label for="nombre" class="nameU"><%= datos[i].nombre%> <%= datos[i].apellidos%></label>
+
+            <div>
+                <p class="text">
+                    <%= datos[i].contenido%>
+                </p>
+            </div>
+            <div>
+                <img src=<%= datos[i].imagen%> alt="img" class="imgPub" id="mgPub">
+            </div>
+
+            <div>
+                <form action="">
+
+                </form>
+            </div>
+
+        </div>
+
+        <%}%>
+        </div>
+
+        <div class="Login_ML" id="LMF">
+            <div class="portada" id="portada">
+                <img src="" alt="iniciar sesion" class="avatar" id="fotoPerfil">
+            </div>
+            <form class="menu">
+                
+                     <a href="/Web-Life/Perfil">Perfil</a>
+                     <br>
+                <a href="/">cerrar sesion</a>
+            
+               
+
+            </form>
+
+        </div>
+
+
+
+    <div class="ob">
+        <var id="ruta" class="var" inputmode="valor"> <%= perfil%></var>
+        <var id="portaS"><%= portada%></var>
+    </div>
+    <script src="Scrips/jquery-3.5.0.js"></script>
+    <script src="Scrips/web_life.js"></script>
+
+</body>
+
+</html>

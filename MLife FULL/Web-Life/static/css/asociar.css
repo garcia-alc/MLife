@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+ font: small;
+ color: black;
+}
+
+.push{
+    width: 1200px;
+    height: 520px;
+    background: url(../img/fondo.png) local;
+    color: #ffffff;
+   font-size: 12px;
+    top: 55%;
+    left: -38%;
+    position:absolute;
+    transform: translate(50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 40px;
+    border-radius: 20px;
+}
+
+.socio_M{
+    display: block;
+    margin: 5px;
+    max-width: 350px;
+    top: 50%;
+    left: 0%;
+    position: absolute;
+    transform: translate(50%, -50%);
+    border-radius: 20px;
+}
+
+.socio_M:hover{
+    display: block;
+    margin: 10px;
+    max-width: 400px;
+}
+
+.socio_F{
+    display: block;
+    margin: 5px;
+    max-width: 350px;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    transform: translate(50%, -50%);
+    border-radius: 20px;
+}
+
+.socio_F:hover{
+    display: block;
+    margin: 10px;
+    max-width: 400px;
+    
+}
+
+
+header{
+    width: 100%;
+}
+
+header nav{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+    background: url(../img/var.png);
+}
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+
+.ML:hover{
+    background: rgb(47,0,74);
+    font-size: 17px;
+}
+
+
+.radio_btn{
+    margin: 1px 1px;
+    color:white;
+    font-style: inherit;
+    font-weight: bold;
+    font-size-adjust: inherit;
+    font-size: 13px;
+    border-radius: 15px;
+}
+
+.radio_btn:hover {
+    margin: 2px 2px;
+    color:white;
+    background: rgb(47,0,74);
+    font-size-adjust: inherit;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+
+.Mover{
+    float: right;
+}
+
+.ajustar{
+    display: block;
+    margin: -20px;
+    max-width: 40px;
+}
+
+.des{
+    margin: 20px;
+    width: 1200px;
+    height: 520px;
+    background: white;
+    color: black;
+   font-size: 12px;
+    top: 130%;
+    left: -39.5%;
+    position:absolute;
+    transform: translate(50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 40px;
+}
