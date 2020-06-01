@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu perfil</title>
+    <link rel="stylesheet" href="css/subir_photo.css">
+</head>
+
+<body>
+    <div class="omitir">
+        <a href="/Web-Life">omitir</a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="img/usuario.png" id="visual" class="perfil">
+        </div>
+            <div class="card-footer">
+                
+                <form action="/Personalizar" method="POST" enctype="multipart/form-data">
+                    <button class="im3" id="3" type="submit"><img src="img/accept.png" alt="Guardar">Guardar</button>
+                    <input type="file" id="inmg-uploader" name="image" class="as" onchange="return correr()">
+                </form>
+                <button class="im" id="1"><img src="img/add.png" alt="subir">Subir foto de perfil</button>
+                <button class="im2" id="2"><img src="img/add.png" alt="Cambiar">Cambiar</button>
+                <br> <br> <br>
+                <label for="Nombre_Usuario" class="ucer_name"> <%= usuario %> </label>
+            </div>        
+    </div>
+
+    <script src="Scrips/jquery-3.5.0.js"></script>
+    <script src="Scrips/jquery.knob.js"></script>
+    <script src="Scrips/app.js"></script>
+    <script src="Scrips/axios.min.js"></script>
+
+</body>
+
+</html>

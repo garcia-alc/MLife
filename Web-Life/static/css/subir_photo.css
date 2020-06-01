@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+    height: 100vh;
+    background: url(../img/fondo.png) no-repeat center top;
+    background-size: cover;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    top: -15%;
+    border: none;
+    height: 20rem;
+    width: 30rem;
+position: relative;
+background: transparent;
+}
+
+.card-footer{
+width: 500px;
+position: absolute;
+bottom: 0 px;
+left: 30%;
+top: 60%;
+right: -15%;
+text-align: center;
+background: transparent;
+padding: 9px;
+}
+
+.perfil{
+    right: 18%;
+    width: 300px;
+    top: 10%;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+}
+.ucer_name{
+    margin: 0;
+    padding: 0; 
+    font-weight: bold;
+    display: block;
+    font-family: sans-serif;
+    font: small;
+    font-size-adjust: initial;
+    font-size: 20px;
+}
+.as{
+    display: none;
+}
+
+.im{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    color: white; 
+    font-size: 15px;
+    border-radius: 20px;
+    font-weight:800;
+    cursor: pointer;
+}
+.im:hover{
+    background: rgb(70,0,74);
+}
+
+.im2{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    color: white; 
+    font-size: 15px;
+    border-radius: 20px;
+    font-weight:800;
+    cursor: pointer;
+    
+}
+.im2:hover{
+    background:rgb(70,0,74);
+}
+.im2{
+    display: none;
+}
+.im3{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    color: white; 
+    font-size: 15px;
+    border-radius: 20px;
+    font-weight:800;
+    cursor: pointer;
+}
+.im3:hover{
+    background: rgb(70,0,74);
+}
+.im3{
+    display: none;
+}
+
+.omitir{
+    position: relative;
+    font-size: 20px;
+    top: 75%;
+    right: 15%;
+    float: right;
+    font-weight: bold;
+    display: block;
+    font-family: sans-serif;
+}
+
