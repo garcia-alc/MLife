@@ -1,0 +1,86 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.contener{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+}
+.a{
+ 
+    background: #f0f0d7;
+    border-radius: 50%;
+}
+.a:hover{
+
+    background: rgb(47,0,74);;
+
+}
+.v{
+    display: block;
+    margin: 4px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+
+}
+
+.v1{
+    display: block;
+    margin: 4px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+
+}
+
+.name{
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+
+.name h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: indigo;
+    text-align: center;
+}
+
+
+.mex{
+    height: 150px;
+    width: 300px;
+}
+
+.tec{
+    height: 150px;
+    width: 150px;
+}
+
+.isc{
+    height: 150px;
+    width: 150px;
+}
+
+.logos img{
+    margin-top: 5px;
+    margin-right: 186px;
+}
+
+.logos{
+    position: relative;
+    border-top: 3px solid gray;
+    width: 95%;
+    height: 25%;
+    top: 10%;
+    left: 2.5%;
+
+}

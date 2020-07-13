@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLife Proyect</title>
+    <link rel="stylesheet" href="css/RePro.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <img src="img/logo.png" alt="" class="mk">
+
+        <div class="parra">
+            <p>
+                MLife te desea suerte en esta nueva etapa, te acompañara durante
+                el camino con tu nuevo proyecto, gracias por formar parte de nuestro gremio…
+            </p>
+        </div>
+
+        <div class="Login_ML">
+            <h1>Subir proyecto</h1>
+
+            <form  action="/Proyect" method="POST" enctype="multipart/form-data">
+                <label for="Nombre">NOMBRE DEL PROYECTO</label>
+                <input type="text" placeholder="Enter insert" minlength="3" maxlength="100" id="name" required name="nombre">
+
+                <label for="Apellido">AUTOR O EQUIPO</label>
+                <input type="text" placeholder="Enter insert" id="lastname" required name="autor">
+
+                <label for="documen">PROYECTO (Archivo preferente en PDF)</label>
+                <input type="file" name="image" id="1">
+
+                <label for="Apellido">DESCRIPCION</label>
+                <input type="text" placeholder="Enter insert" id="lastname" required name="descripcion">
+
+
+                <input class="ss" type="submit" value="REGISTRAR">
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <header>
+
+        <nav>
+            <ul>
+                <li class="ML"> <img src="img/logo.png" alt="MLife" class="ajustar"> <input type="submit"
+                        value="MLife Compañy" class="Logo_BT">
+                </li>
+                <li class="radio_btn Mover">
+                    <button type="button" class="Bu">
+                        <img src="img/usuario.png" alt="ucer" class="Ucer" id="Ucer">
+                    </button></li>
+
+
+                <li class="radio_btn Mover"><a href="/Top">
+                        MLTOP</a></li>
+
+                <li class="radio_btn Mover"><a href="/Bolsa">
+                        BOLSA</a></li>
+            </ul>
+        </nav>
+</body>
+
+</html>

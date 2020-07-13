@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa</title>
+    <link rel="stylesheet" href="css/bolsa.css">
+</head>
+
+<body>
+    <div class="op">
+        <%for(var i = 0; i< proyecto.length; i++){%>
+        <div class="contenedor">
+            <div>
+                <img src= <%= proyecto[i].imgperfil%> alt="" class="a">
+                <div class="opa">
+                    <h1><%= proyecto[i].nombre%> <%= proyecto[i].apellidos%></h1>
+                </div>
+
+                <div class="parrafo">
+                    <h1><%= proyecto[i].nombrep%></h1>
+                    <br>
+                    <p>
+                        <%= proyecto[i].descripcion%>
+                    </p>
+                    <br>
+                    <h2>Dependencia o equipo:  <%= proyecto[i].autore%> </h2>
+                    <br>
+                    <br>
+                    <button>ver detalles</button>
+                    <button>Invertir en proyecto</button>
+                    <button>Comprar acciones</button>
+                </div>
+
+                <div class="li">
+                    <embed src= <%= proyecto[i].previem%>  type="" class = "ff">
+                </div>
+
+            </div>
+        </div>
+        <%}%>
+</div>
+
+
+
+    <header>
+
+        <nav>
+            <ul>
+                <li class="ML"> <img src="../img/logo.png" alt="MLife" class="ajustar"> <input type="submit"
+                        value="MLife Compañy" class="Logo_BT">
+                </li>
+                <li class="radio_btn Mover">
+                    <button type="button" class="Bu">
+                        <img src="../img/usuario.png" alt="ucer" class="Ucer" id="Ucer">
+                    </button></li>
+                <li class="radio_btn Mover"><a href="/Web-Lif">
+                        WEB-LIFE </a></li>
+
+                <li class="radio_btn Mover"><a href="/Top">
+                        MLTOP</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+</body>
+
+</html>

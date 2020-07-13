@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    color: black;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+}
+
+header nav{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0px auto;
+    background: url(../img/var.png);
+}
+
+header nav ul{
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    color: #ffffff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+
+.ML:hover{
+    background: rgb(47,0,74);
+    font-size: 17px;
+}
+
+
+.radio_btn{
+    margin: 1px 1px;
+    color:white;
+    font-style: inherit;
+    font-weight: bold;
+    font-size-adjust: inherit;
+    font-size: 13px;
+    border-radius: 15px;
+}
+
+.radio_btn:hover {
+    margin: 2px 2px;
+    color:white;
+    background: rgb(47,0,74);
+    font-size-adjust: inherit;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.Mover{
+    float: right;
+}
+
+.ajustar{
+    display: block;
+    margin: -20px;
+    max-width: 40px;
+}
+.Logo_BT{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: transparent;
+    color: #fff; 
+    font-size: 18px;
+    cursor: pointer;
+    margin: 2px 2px;
+    font-size-adjust: inherit;
+    border-radius: 15px;
+}
+
+.Ucer{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+}
+.Bu{
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}   
+
+.contenedor{
+    position:  absolute;
+    top: 10%;
+    margin: 4px;
+    width: 99%;
+    height: 85%;
+}
+
+.mk{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: url(../img/com.png);
+}
+
+.parra{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    left: 8%;
+    top: 6%;
+}
+
+.parra p{
+   font-size: 20px;  
+   text-align: justify;
+   margin: 3px; 
+}
+
+.Login_ML{
+    margin: 4px;
+    width: 99%;
+    height: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Login_ML h1{
+    text-align: center;
+    color: rgb(47,0,74);
+}
+
+
+
+
+.Login_ML label{
+    margin: 0;
+    padding: 0; 
+    font-weight: bold;
+    display: block;
+}
+
+.Login_ML input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.Login_ML input[type="text"],
+.Login_ML input[type="email"],
+.Login_ML input[type="password"]{
+    
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.Login_ML input[type="Submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(47,0,74);
+    color: white; 
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Login_ML input[type="Submit"]:hover{
+    background: rgb(70,0,74);
+}

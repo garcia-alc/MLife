@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Life | ML@</title>
+    <link rel="stylesheet" href="css/Web_LifeEstilos.css">
+</head>
+
+<body>
+    
+
+    <div class="publicar">
+
+        <form action="/publicar" method="POST" enctype="multipart/form-data">
+            <input type="text" placeholder="¿Cual es tu meta?" class="coon" name="textoP">
+            <input type="file" name="image" id="fotoPublicacion" class="a">
+            <input class="ss" type="submit" value="Publicar">
+
+        </form>
+
+
+        <button type="submit" class="pub">
+            <img src="img/pub.png">
+        </button>
+    </div>
+
+
+
+    <div class="progress" id="barra">
+        <label for="barr" class="tittle">Mi progreso</label>
+        <div class="prosbar">
+            <label for="p">Proyectos en curso</label>
+            <label for="a">TOP popularidad</label>
+            <label for="a">Acciones valuadas</label>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/usuario.png" alt="mm" class="mm" id="mm">
+    </div>
+    
+    <% var cara = 0 %>
+    <% var cara1 = 0 %>
+
+
+
+    <div class="contenedor">
+        <% for(var i=0; i< datos.length; i++){%>
+        
+        <div class="public">
+            <img src=<%= datos[i].imgperfil%> alt="mini" class="mini">
+            <label for="nombre" class="nameU"><%= datos[i].nombre%> <%= datos[i].apellidos%></label>
+            
+            <div>
+                <p class="text">
+                    <%= datos[i].contenido%>
+                </p>
+            </div>
+            <div>
+                <img src=<%= datos[i].imagen%> alt="img" class="imgPub" id="mgPub">
+            </div>  
+            <div class="sol" id="sol">
+                <img class="lli" src="img/images.png" alt="w">
+                
+                <button>Me interesa</button>
+                <button   <% onclick= console.log(2) %>   class="app"  id= <%  i %> >  Comentar  </button>
+                
+            </div>  
+        </div>  
+        <%}%> 
+        </div>
+
+       
+
+        <div>
+            <% for(var i=0; i< datos.length; i++){%>
+              
+        <div class="comentarios" id="comentarios">
+            <img src="img/cancel.png" alt="" class="xca" id="xca">
+            <img src=<%= datos[cara].imgperfil%> alt="s" class="gg">
+            <label for="nombre" class="cx"><%= datos[cara].nombre%> <%= datos[cara].apellidos%></label>
+            
+            <div class="tte">
+                <p class="tex">
+                    <%= datos[i].contenido%>
+                </p>
+            </div>
+
+            <div class="metac">
+            <img src=<%= datos[cara].imagen%> alt="img" class="comIma">
+            </div>
+
+            <div class="agreC">
+             
+                <div class="men">
+                    
+                    <div class="comentt">
+                        <img src="img/usuario.png" alt="" class="imgC">
+                        <label for="nombre" class="cc"><%= datos[0].nombre%> <%= datos[0].apellidos%></label>
+                        
+                        <div class="dx">
+                            <p class="texx">
+                                <%= datos[i].contenido%>
+                            </p>  
+                        </div>
+
+                    </div>
+
+                </div>
+
+            <div>
+            <form action="/p" method="POST" enctype="multipart/form-data">
+              <input type="text" name="conte">  
+              <input type="submit" value="" class="manda">
+            </form>
+             
+            <img src="img/siguiente.png" alt="" class="ele">   
+            </div>
+            
+            </div>
+
+        </div>  
+        <%}%> 
+        </div>
+
+        <div class="Login_ML" id="LMF">
+            <div class="portada" id="portada">
+                <img src="" alt="iniciar sesion" class="avatar" id="fotoPerfil">
+            </div>
+
+
+            <form class="menu">
+                
+                <a href="/Web-Life/Perfil"><img class="rom" src="img/ucer.png" alt=""> <h1>Perfil</h1> </a>
+                <a href="/MLife_Proyect">  <h1>Registrar Proyecto</h1></a>
+                <a href="/MLife_Proyect">  <h1>CHAT</h1></a>
+                <a href="/"> <img src="img/cancel.png" alt=""> <h1>cerrar sesion</h1></a>
+            </form>
+
+        </div>
+
+
+
+    <div class="ob">
+        <var id="ruta" class="var" inputmode="valor"> <%= perfil%></var>
+        <var id="portaS"><%= portada%></var>
+    </div>
+
+
+    <header>
+
+        <nav>
+            <ul>
+                <li class="ML"> <img src="../img/logo.png" alt="MLife" class="ajustar"> <input type="submit"
+                        value="MLife Compañy" class="Logo_BT">
+                </li>
+                <li class="radio_btn Mover">
+                    <button type="button" class="Bu">
+                        <img src="img/usuario.png" alt="ucer" class="Ucer" id="Ucer">
+                    </button></li>
+
+
+                <li class="radio_btn Mover"><a href="/Top">
+                        MLTOP</a></li>
+
+                <li class="radio_btn Mover"><a href="/Bolsa">
+                        BOLSA</a></li>
+            </ul>
+        </nav>
+
+
+
+
+    <script src="Scrips/jquery-3.5.0.js"></script>
+    <script src="Scrips/web_life.js"></script>
+
+</body>
+
+</html>
